@@ -33,6 +33,7 @@ CMD ["sh", "/opt/entrypoint.sh"]
 RUN useradd --uid 1000 --create-home bitswan
 ENV HOME=/home/bitswan
 USER bitswan
+RUN pip install lark
 
 USER root
 RUN mkdir -p /home/bitswan/work
