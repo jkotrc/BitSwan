@@ -23,6 +23,7 @@ RUN apt-get -yqq install \
 
 COPY . /src/
 RUN cd /src/ ; pip3 install .
+RUN pip3 install lark
 
 COPY pre/ /opt/
 
